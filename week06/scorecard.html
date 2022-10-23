@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Card</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link href="styles/small.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h2>Bunco score card</h2>
+      <h4>by Robin Dickson</h4>
+    </header>
+    <main>
+      <div>
+        <h2>Bunco!</h2>
+      </div>
+      <div class="name">
+        <input type="text" placeholder="Name" size="40" />
+        <p>Welcome to Bunco</p>
+      </div>
+      <div class="card">
+        <h3>Roll</h3>
+        <h3>Game 1</h3>
+        <h3>Game 2</h3>
+        <h3>Game 3</h3>
+        <h3>Game 4</h3>
+        <h3>Game 5</h3>
+        <picture>
+          <img src="styles/images/die1.PNG" alt="dice 1" class="die1" />
+        </picture>
+        <picture>
+          <img src="styles/images/die2.PNG" alt="dice 2" class="die2" />
+        </picture>
+        <picture>
+          <img src="styles/images/die3.PNG" alt="dice 3" class="die3" />
+        </picture>
+        <picture>
+          <img src="styles/images/die4.PNG" alt="dice 4" class="die4" />
+        </picture>
+        <picture>
+          <img src="styles/images/die5.PNG" alt="dice 5" class="die5" />
+        </picture>
+        <picture>
+          <img src="styles/images/die6.PNG" alt="dice 6" class="die6" />
+        </picture>
+        <h3>Round Total</h3>
+        <p>
+          <span class="colplace"></span
+          ><button class="button" onclick="getTotal()">Calculate Total</button>
+        </p>
+        <h3 class="buncos">BUNCOS</h3>
+        <h3 class="wins">WINS</h3>
+
+        <form class="score1x1">
+          <input type="text" id="input3" size="6" placeholder="Points" />
+          <input type="text" id="WL1" placeholder="W or L" size="6" />
+        </form>
+        <form class="score2x1">
+          <input type="text" id="input4" size="6" placeholder="Points" />
+          <input type="text" id="WL2" placeholder="W or L" size="6" />
+        </form>
+        <form class="score3x1">
+          <input type="text" id="input5" size="6" placeholder="Points" />
+          <input type="text" id="WL3" placeholder="W or L" size="6" />
+        </form>
+        <form class="score4x1">
+          <input type="text" id="input6" size="6" placeholder="Points" />
+          <input type="text" id="WL4" placeholder="W or L" size="6" />
+        </form>
+        <form class="score5x1">
+          <input type="text" id="input7" size="6" placeholder="Points" />
+          <input type="text" id="WL5" placeholder="W or L" size="6" />
+        </form>
+        <form class="score6x1">
+          <input type="text" id="input8" size="6" placeholder="Points" />
+          <input type="text" id="WL6" placeholder="W or L" size="6" />
+        </form>
+
+        <div class="scoretotal1">
+          <input id="G1W" type="text" placeholder="Wins" size="6" />
+          <input id="G1L" type="text" placeholder="Losses" size="6" />
+          <div id="output2" class="common"></div>
+        </div>
+
+        <form class="score1x2">
+          <input type="text" id="input9" size="6" placeholder="Points" />
+          <input type="text" id="WL7" placeholder="W or L" size="6" />
+        </form>
+        <form class="score2x2">
+          <input type="text" id="input10" size="6" placeholder="Points" />
+          <input type="text" id="WL8" placeholder="W or L" size="6" />
+        </form>
+        <form class="score3x2">
+          <input type="text" id="input11" size="6" placeholder="Points" />
+          <input type="text" id="WL9" placeholder="W or L" size="6" />
+        </form>
+        <form class="score4x2">
+          <input type="text" id="input12" size="6" placeholder="Points" />
+          <input type="text" id="WL10" placeholder="W or L" size="6" />
+        </form>
+        <form class="score5x2">
+          <input type="text" id="input13" size="6" placeholder="Points" />
+          <input type="text" id="WL11" placeholder="W or L" size="6" />
+        </form>
+        <form class="score6x2">
+          <input type="text" id="input14" size="6" placeholder="Points" />
+          <input type="text" id="WL12" placeholder="W or L" size="6" />
+        </form>
+
+        <div class="scoretotal2">
+          <input id="G2W" type="text" placeholder="Wins" size="6" />
+          <input id="G2L" type="text" placeholder="Losses" size="6" />
+          <div id="output3" class="common"></div>
+        </div>
+
+        <form class="score1x3">
+          <input type="text" id="input15" size="6" placeholder="Points" />
+          <input type="text" id="WL13" placeholder="W or L" size="6" />
+        </form>
+        <form class="score2x3">
+          <input type="text" id="input16" size="6" placeholder="Points" />
+          <input type="text" id="WL14" placeholder="W or L" size="6" />
+        </form>
+        <form class="score3x3">
+          <input type="text" id="input17" size="6" placeholder="Points" />
+          <input type="text" id="WL15" placeholder="W or L" size="6" />
+        </form>
+        <form class="score4x3">
+          <input type="text" id="input18" size="6" placeholder="Points" />
+          <input type="text" id="WL16" placeholder="W or L" size="6" />
+        </form>
+        <form class="score5x3">
+          <input type="text" id="input19" size="6" placeholder="Points" />
+          <input type="text" id="WL17" placeholder="W or L" size="6" />
+        </form>
+        <form class="score6x3">
+          <input type="text" id="input20" size="6" placeholder="Points" />
+          <input type="text" id="WL18" placeholder="W or L" size="6" />
+        </form>
+
+        <div class="scoretotal3">
+          <input id="G3W" type="text" placeholder="Wins" size="6" />
+          <input id="G3L" type="text" placeholder="Losses" size="6" />
+          <div id="output4" class="common"></div>
+        </div>
+
+        <form class="score1x4">
+          <input type="text" id="input21" size="6" placeholder="Points" />
+          <input type="text" id="WL19" placeholder="W or L" size="6" />
+        </form>
+        <form class="score2x4">
+          <input type="text" id="input22" size="6" placeholder="Points" />
+          <input type="text" id="WL20" placeholder="W or L" size="6" />
+        </form>
+        <form class="score3x4">
+          <input type="text" id="input23" size="6" placeholder="Points" />
+          <input type="text" id="WL21" placeholder="W or L" size="6" />
+        </form>
+        <form class="score4x4">
+          <input type="text" id="input24" size="6" placeholder="Points" />
+          <input type="text" id="WL22" placeholder="W or L" size="6" />
+        </form>
+        <form class="score5x4">
+          <input type="text" id="input25" size="6" placeholder="Points" />
+          <input type="text" id="WL23" placeholder="W or L" size="6" />
+        </form>
+        <form class="score6x4">
+          <input type="text" id="input26" size="6" placeholder="Points" />
+          <input type="text" id="WL24" placeholder="W or L" size="6" />
+        </form>
+
+        <div class="scoretotal4">
+          <input id="G4W" type="text" placeholder="Wins" size="6" />
+          <input id="G4L" type="text" placeholder="Losses" size="6" />
+          <div id="output5" class="common"></div>
+        </div>
+
+        <form class="score1x5">
+          <input type="text" id="input27" size="6" placeholder="Points" />
+          <input type="text" id="WL25" placeholder="W or L" size="6" />
+        </form>
+        <form class="score2x5">
+          <input type="text" id="input28" size="6" placeholder="Points" />
+          <input type="text" id="WL26" placeholder="W or L" size="6" />
+        </form>
+        <form class="score3x5">
+          <input type="text" id="input29" size="6" placeholder="Points" />
+          <input type="text" id="WL27" placeholder="W or L" size="6" />
+        </form>
+        <form class="score4x5">
+          <input type="text" id="input30" size="6" placeholder="Points" />
+          <input type="text" id="WL28" placeholder="W or L" size="6" />
+        </form>
+        <form class="score5x5">
+          <input type="text" id="input31" size="6" placeholder="Points" />
+          <input type="text" id="WL29" placeholder="W or L" size="6" />
+        </form>
+        <form class="score6x5">
+          <input type="text" id="input32" size="6" placeholder="Points" />
+          <input type="text" id="WL30" placeholder="W or L" size="6" />
+        </form>
+
+        <div class="scoretotal5">
+          <input id="G5W" type="text" placeholder="Wins" size="6" />
+          <input id="G5L" type="text" placeholder="Losses" size="6" />
+          <div id="output6" class="common"></div>
+        </div>
+        <div class="buncototal">
+          <input type="text" size="18" />
+        </div>
+        <div class="winstotal">
+          <input type="text" size="18" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <script src="scripts/script.js"></script>
+    </footer>
+  </body>
+</html>
